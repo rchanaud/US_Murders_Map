@@ -1,11 +1,11 @@
 /*******************************************************************
 	Styles généraux
 ********************************************************************/
-html, body { margin: 0; padding: 0; }
+html, body { margin: 0; padding: 0; height: 100%; overflow: hidden; }
 
 /*******************************************************************
 	Styles de la Map
 ********************************************************************/
-#map { width: 700px; height: 500px; margin: 10% auto; }
-#info-area { width: 0px; position: absolute; top:0; right: 0; padding: 20px; background-color: #1f3654; z-index: 1000; display: none; }
+#map { width: 700px; height: 500px; margin: 10% 5%; }
+#info-area { width: 0px; position: absolute; top:0; right: 0; padding: 3em; background-color: #333; z-index: 1000; display: none; }
 #info-area h2 { font-family: 'Metal Mania', cursive; font-size: 3em; font-weight: 400; color: white; }

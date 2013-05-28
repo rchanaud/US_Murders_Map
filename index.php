@@ -21,7 +21,6 @@
 
 	<!-- Map -->
 	<div id="map"></div>
-	<div id="clicked-state"></div>
 	<!-- /Map -->
 
 	<!-- Scripts -->
