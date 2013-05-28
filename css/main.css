@@ -7,3 +7,5 @@ html, body { margin: 0; padding: 0; }
 	Styles de la Map
 ********************************************************************/
 #map { width: 700px; height: 500px; margin: 10% auto; }
+#info-area { width: 0px; position: absolute; top:0; right: 0; padding: 20px; background-color: #1f3654; z-index: 1000; display: none; }
+#info-area h2 { font-family: 'Metal Mania', cursive; font-size: 3em; font-weight: 400; color: white; }

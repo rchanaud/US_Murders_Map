@@ -3,6 +3,10 @@
 <head>
 	<meta charset="UTF-8">
 	<title>DataViz Project</title>
+	
+	<!-- Fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Metal+Mania' rel='stylesheet' type='text/css'>
+	<!-- /Fonts -->
 
 	<!-- Style -->
 	<link rel="stylesheet" href="css/main.css">
@@ -11,6 +15,10 @@
 </head>
 <body>
 	
+	<!-- Infos -->
+	<div id="info-area"></div>
+	<!-- /Infos -->
+
 	<!-- Map -->
 	<div id="map"></div>
 	<div id="clicked-state"></div>
