@@ -1,9 +1,16 @@
+<?php require("server/init.php") ?>
 <!DOCTYPE html>
+<html>
 <head>
+
+    <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    
+    <title>Les serial killers dans le monde</title>
     
     <!-- Style -->
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/jquery-jvectormap-1.1.1.css" />
     <link rel="stylesheet" href="jquery-jvector.css" type="text/css" media="screen"/>
     <!-- /Style -->
 
