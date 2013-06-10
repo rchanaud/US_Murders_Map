@@ -26,14 +26,8 @@
 			$sql2 ->execute();
 
 	  		// DATA type
-	  		$row  = $sql ->fetch(PDO::FETCH_OBJ);
-	  		$row2 = $sql2->fetch(PDO::FETCH_OBJ);
-
-	  		var_dump($row);
-
-	  		//Traitement
-			$nbr  = $row[0];
-			$nbr2 = $row2[0];
+	  		$row  = $sql ->fetch(PDO::FETCH_BOTH);
+	  		$row2 = $sql2->fetch(PDO::FETCH_BOTH);
 
 		  	$conn = null; // Déconnexion
 

@@ -1,7 +1,8 @@
+<?php require("./server/init.php") ?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  
+
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
     <meta charset="UTF-8">
     
@@ -27,8 +28,8 @@
       <!-- STATS GLOBALES -->
       <section>
           <div></div>
-          <span id="totalSerial">TOTAL SERIAL KILLERS : 206</span>
-          <span id="totalVictims">VICTIMES TOTAL : 100345</span>
+          <span id="totalSerial">TOTAL SERIAL KILLERS : <?php echo $row2[0]; ?></span>
+          <span id="totalVictims">VICTIMES TOTAL : <?php echo $row[0]; ?></span>
       </section>
       <!-- STATS GLOBALES -->
       
