@@ -15,19 +15,24 @@ header > h1  { position: absolute; width: 200px; text-align: center; color: #ab1
 			    transform:  rotate(325deg);
 }
 
+
+/******************/
+/* Boutons SWITCH */
+/******************/
 .radioBtns{ position: relative; left: 130px; top: 200px; z-index: 100; float:left;padding:4px 0px 5px 0; font-size:13px; font-family: spetetrial, Verdana; border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;-khtml-border-radius:3px;-o-border-radius:3px; }
 .radioBtns input{display:none;display:inline-block\2;}
-.radioBtns label{padding:5px 15px; background: #323232; color: #323232;}
+.radioKill label{padding:5px 15px; background: url(img/killers.jpg); opacity: 0.5;}
+.radioVictims label{padding:5px 15px; background: url(img/victims.jpg); opacity: 0.5;}
 
 /* Chrome hack for padding */
 @media screen and (-webkit-min-device-pixel-ratio:0){.radioBtns label{padding:4px 15px 6px 15px;}}
 
 .radioKill label:hover,.radioKill input[type="radio"]:checked+label{
-  background: #ab8113 url(img/killers.jpg) no-repeat; width: 110px; height: 40px; 
+  background: #ab8113 url(img/killers.jpg) no-repeat; width: 110px; height: 40px; opacity: 1; 
 }
 
 .radioVictims label:hover,.radioVictims input[type="radio"]:checked+label{
-  background: #ac1315 url(img/victims.jpg) no-repeat; width: 110px; height: 40px;
+  background: #ac1315 url(img/victims.jpg) no-repeat; width: 110px; height: 40px; opacity: 1;
 }
 .radioBtns .radioKill label{border-radius:3px 0px 0 3px; height: 100px; -moz-border-radius:3px 0px 0 3px;-webkit-border-radius:3px 0px 0 3px;-khtml-border-radius:3px 0px 0 3px;-o-border-radius:3px 0px 0 3px;}
 .radioBtns .radioVictims label{margin-left:-3px;border-radius:0 3px 3px 0;-moz-border-radius:0 3px 3px 0;-webkit-border-radius:0 3px 3px 0;-khtml-border-radius:0 3px 3px 0;-o-border-radius:0 3px 3px 0;}
@@ -39,16 +44,34 @@ header > h1  { position: absolute; width: 200px; text-align: center; color: #ab1
 .radioBtns input{margin-top:-5px\9;}
 .radioBtns label{background:none\9;padding-bottom:7px\9;padding-left:2px\9;margin-bottom:-5px\9;}
 
-
+/**************************/
+/* SECTION SERIAL KILLERS */
+/**************************/
 section { position: absolute; top: 10px; left: 400px; width: 400px; font-family: spetetrial, Verdana;}
 section > div { background:url(img/bgstats.png) no-repeat; width: 409px; height: 200px;}
 #totalSerial { color: #ab1414; position: absolute; top: 40px; left: 50px; font-size: 25px;}
 #totalVictims { color: #ab1414; position: absolute; top: 80px; left: 50px; font-size: 25px;}
 
+/**************/
+/* PARTAGE RS */
+/**************/
 #facebook { position: absolute; top: 10px; left: 900px;}
 #facebook:hover { background: url(img/fb_hover-onlick.png);}
 
-#world-map { position: relative; top: 230px; margin: 0 auto; width: 900px;}
+#twitter { position: absolute; top: 80px; left: 900px;}
+#twitter:hover { background: url(img/twitter_hover-onlick.png);}
 
-footer { font-family: verdana; color: #fff; position: fixed; bottom: 0; width: 100%; left: 0;}
+
+/*************/
+/* WORLD MAP */
+/*************/
+#world-map { position: relative; top: 230px; margin: 0 auto; width: 900px; width: 900px; height: 442px}
+@media screen and (min-width: 1800px) { #world-map {width:1300px; height:750px;} }
+
+
+/****************/
+/* PIED DE PAGE */
+/****************/
+footer { font-family: verdana; color: #fff; position: fixed; bottom: 0; width: 100%; left: 0; opacity: 0.5;}
 footer > p { position: relative; width: 900px; margin: 0 auto; text-align: center;}
+footer > p > a { color: #fff;}

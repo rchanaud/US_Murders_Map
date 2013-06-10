@@ -28,20 +28,24 @@
       <a title="Partager sur Facebook" href="http://www.facebook.com/share.php?u=Serial-Killers-Visualizer/542085159182499?ref=hl" onclick="return fbs_click()" target="_blank">
       <img src="css/img/fb_default.png" alt="Partager sur Facebook" /></a>
     </div>
+    <div id="twitter">
+      <a title="Partager sur Facebook" href="http://www.facebook.com/share.php?u=Serial-Killers-Visualizer/542085159182499?ref=hl" onclick="return fbs_click()" target="_blank">
+      <img src="css/img/twitter_default.png" alt="Partager sur Facebook" /></a>
+    </div>
     
     <div class="radioBtns">
         <span class="radioKill">
-          <input id="yes" type="radio" name="radio" checked="checked" value="yes" />
-          <label for="yes">Tueurs</label>
+          <input id="kill" type="radio" name="radio" checked="checked" value="yes" />
+          <label for="kill">Tueurs</label>
         </span>
         <span class="radioVictims">
-          <input id="no" type="radio" name="radio" value="no" />
-          <label for="no">Victimes</label>
+          <input id="victims" type="radio" name="radio" value="no" />
+          <label for="victims">Victimes</label>
         </span>
     </div>
 
-  <div id="world-map" style="width: 900px; height: 442px"></div>
+  <div id="world-map"></div>
   <script src="js/main.js"></script>
-  <footer><p>Une terrifiante data visualisation des serial killers, propulsée par Hétic<p></footer>
+  <footer><p>Une terrifiante data visualisation des serial killers, propulsée par <a href="http://www.hetic.net">Hétic</a><p></footer>
 </body>
 </html>
