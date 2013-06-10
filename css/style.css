@@ -5,43 +5,50 @@ html, body { margin: 0; padding: 0; background: #000; background: url(img/bg.jpg
 	src: url('fonts/SPETETRIAL.otf');
 }
 
-header > div { background:url(img/logoe.png) no-repeat; width: 330px; height: 290px;}
-header > span { position: absolute; color: #ab1414; font-size: 45px; font-family: spetetrial, Verdana; text-align: center; 
-				top: 35px; left: 10px;
+header { position: absolute; width: 250px; height: 220px; }
+header > div { background:url(img/logoe.png) no-repeat; width: 250px; height: 220px;}
+header > h1  { position: absolute; width: 200px; text-align: center; color: #ab1414; font-size: 45px; font-weight:normal; font-family: spetetrial, Verdana; text-align: center; 
+				top: 0px; left: 0px;
 				-webkit-transform: rotate(333deg);
 			    -moz-transform: rotate(325deg);
 			    -o-transform: rotate(325deg);
 			    transform:  rotate(325deg);
 }
 
+.radioBtns{ position: relative; left: 130px; top: 200px; z-index: 100; float:left;padding:4px 0px 5px 0; font-size:13px; font-family: spetetrial, Verdana; border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;-khtml-border-radius:3px;-o-border-radius:3px; }
+.radioBtns input{display:none;display:inline-block\2;}
+.radioBtns label{padding:5px 15px; background: #323232; color: #323232;}
 
-section { position: relative; top: -250px; left: 370px; width: 400px; font-family: spetetrial, Verdana;}
+/* Chrome hack for padding */
+@media screen and (-webkit-min-device-pixel-ratio:0){.radioBtns label{padding:4px 15px 6px 15px;}}
+
+.radioKill label:hover,.radioKill input[type="radio"]:checked+label{
+  background: #ab8113 url(img/killers.jpg) no-repeat; width: 110px; height: 40px; 
+}
+
+.radioVictims label:hover,.radioVictims input[type="radio"]:checked+label{
+  background: #ac1315 url(img/victims.jpg) no-repeat; width: 110px; height: 40px;
+}
+.radioBtns .radioKill label{border-radius:3px 0px 0 3px; height: 100px; -moz-border-radius:3px 0px 0 3px;-webkit-border-radius:3px 0px 0 3px;-khtml-border-radius:3px 0px 0 3px;-o-border-radius:3px 0px 0 3px;}
+.radioBtns .radioVictims label{margin-left:-3px;border-radius:0 3px 3px 0;-moz-border-radius:0 3px 3px 0;-webkit-border-radius:0 3px 3px 0;-khtml-border-radius:0 3px 3px 0;-o-border-radius:0 3px 3px 0;}
+.radioBtns span:hover,.radioBtns label:hover{cursor:pointer}
+.radioBtns .radioKill:hover label,.radioBtns .radioKill input[type="radio"]:checked+label{color:#fff}
+.radioBtns .radioVictims:hover label,.radioBtns .radioVictims input[type="radio"]:checked+label{color:#fff}
+
+/* IE FIX */
+.radioBtns input{margin-top:-5px\9;}
+.radioBtns label{background:none\9;padding-bottom:7px\9;padding-left:2px\9;margin-bottom:-5px\9;}
+
+
+section { position: absolute; top: 10px; left: 400px; width: 400px; font-family: spetetrial, Verdana;}
 section > div { background:url(img/bgstats.png) no-repeat; width: 409px; height: 200px;}
 #totalSerial { color: #ab1414; position: absolute; top: 40px; left: 50px; font-size: 25px;}
 #totalVictims { color: #ab1414; position: absolute; top: 80px; left: 50px; font-size: 25px;}
 
+#facebook { position: absolute; top: 10px; left: 900px;}
+#facebook:hover { background: url(img/fb_hover-onlick.png);}
 
-#switch { position: relative; top: -250px; left: 100px;}
-#switchKills { position: absolute; background: url(img/switch_killers.png) no-repeat; width: 220px; height: 40px;}
-#switchVictims { position: absolute; background: url(img/switch_victims.png) no-repeat; width: 220px; height: 40px;;}
+#world-map { position: relative; top: 230px; margin: 0 auto; width: 900px;}
 
-
-#map { position: relative; top: -300px; left: 100px;}
-
-.dg select {
-    width: auto;
-    height: auto;
-    border: none;
-    color: #000;
-    font: 11px 'Lucida Grande', sans-serif
-}
-.dg input {
-    box-shadow: none;
-    -webkit-box-shadow: none
-    -moz-box-shadow: none;
-    border-radius: 0;
-    font: 11px 'Lucida Grande', sans-serif;
-}
-#k-proj-title {
-    text-align: center;
-}
+footer { font-family: verdana; color: #fff; position: fixed; bottom: 0; width: 100%; left: 0;}
+footer > p { position: relative; width: 900px; margin: 0 auto; text-align: center;}
