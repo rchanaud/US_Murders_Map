@@ -1,0 +1,47 @@
+html, body { margin: 0; padding: 0; background: #000; background: url(img/bg.jpg); }
+
+@font-face {
+	font-family: spetetrial;
+	src: url('fonts/SPETETRIAL.otf');
+}
+
+header > div { background:url(img/logoe.png) no-repeat; width: 330px; height: 290px;}
+header > span { position: absolute; color: #ab1414; font-size: 45px; font-family: spetetrial, Verdana; text-align: center; 
+				top: 35px; left: 10px;
+				-webkit-transform: rotate(333deg);
+			    -moz-transform: rotate(325deg);
+			    -o-transform: rotate(325deg);
+			    transform:  rotate(325deg);
+}
+
+
+section { position: relative; top: -250px; left: 370px; width: 400px; font-family: spetetrial, Verdana;}
+section > div { background:url(img/bgstats.png) no-repeat; width: 409px; height: 200px;}
+#totalSerial { color: #ab1414; position: absolute; top: 40px; left: 50px; font-size: 25px;}
+#totalVictims { color: #ab1414; position: absolute; top: 80px; left: 50px; font-size: 25px;}
+
+
+#switch { position: relative; top: -250px; left: 100px;}
+#switchKills { position: absolute; background: url(img/switch_killers.png) no-repeat; width: 220px; height: 40px;}
+#switchVictims { position: absolute; background: url(img/switch_victims.png) no-repeat; width: 220px; height: 40px;;}
+
+
+#map { position: relative; top: -300px; left: 100px;}
+
+.dg select {
+    width: auto;
+    height: auto;
+    border: none;
+    color: #000;
+    font: 11px 'Lucida Grande', sans-serif
+}
+.dg input {
+    box-shadow: none;
+    -webkit-box-shadow: none
+    -moz-box-shadow: none;
+    border-radius: 0;
+    font: 11px 'Lucida Grande', sans-serif;
+}
+#k-proj-title {
+    text-align: center;
+}
