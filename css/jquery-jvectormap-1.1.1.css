@@ -28,6 +28,11 @@
     text-align: center;
 }
 
+.jvectormap-region {
+    stroke: white;
+    stroke-width: 1;
+}
+
 .jvectormap-zoomin {
     top: 10px;
 }

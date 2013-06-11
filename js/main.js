@@ -1,14 +1,23 @@
 //Gestion world map
 $(function(){
-  $('#world-map').vectorMap({
-    map: 'world_mill_en',
-    backgroundColor: 'transparent',
-    regions: [{
-        scale: ['#DEEBF7', '#08519C']
-    }]
-  });
+	$('#world-map').vectorMap({
+		map: 'world_mill_en',
+		backgroundColor: 'transparent',
+		series: {
+		    regions: [{
+		    	values: gdpData,
+		        scale: ['#FFFFFF', '#6e1117'],
+		        normalizeFunction: 'polynomial'
+		    }]
+		},
+		onRegionLabelShow: function(e, el, code){
+    		el.html(el.html()+' (GDP - '+gdpData[code]+')');
+  		}
+	});
 });
 
+
+//Fb crap
 function fbs_click() {
 u=location.href;
 t=document.title;

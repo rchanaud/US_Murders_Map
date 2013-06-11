@@ -10,7 +10,6 @@
     
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="jquery-jvector.css" type="text/css" media="screen"/>
     <link rel="stylesheet" href="css/jquery-jvectormap-1.1.1.css" />
     <!-- /CSS -->
 
@@ -71,6 +70,7 @@
   <script src="js/assets/jquery-1.8.2.js"></script>
   <script src="js/jquery-jvectormap-1.1.1.min.js"></script>
   <script src="js/assets/jquery-jvectormap-world-mill-en.js"></script>
+  <script src="js/gdp-data.js"></script>
   <script src="js/main.js"></script>
   <!-- /SCRIPTS JS -->
 
