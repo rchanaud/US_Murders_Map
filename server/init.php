@@ -23,7 +23,7 @@
 			$sql2 = $conn->prepare("SELECT COUNT(nom) FROM `mechants`");
 			// Wolrd Fucking Map
 
-				$sql3 = $conn->prepare("SELECT SUM(victimes) AS 'Victimes', pays FROM `mechants` GROUP BY pays LIMIT 0 , 100");
+				$sql3 = $conn->prepare("SELECT pays, SUM(victimes) AS 'Victimes' FROM `mechants` GROUP BY pays LIMIT 0 , 100");
 				//$sql3 = $conn->prepare("SELECT COUNT(nom), pays FROM `mechants` group by pays");
 
 			$sql  ->execute();
@@ -33,13 +33,93 @@
 	  		// DATA type
 	  		$row  = $sql ->fetch(PDO::FETCH_BOTH);
 	  		$row2 = $sql2->fetch(PDO::FETCH_BOTH);
-	  		$data = $sql3->fetch(PDO::FETCH_ASSOC);
+	  		$row3 = $sql3->fetchAll(PDO::FETCH_KEY_PAIR);
 
-	  		var_dump($data);
-	  		$data = json_encode($data);
-	  		file_put_contents ("./js/data.json", $data );
-
-	  		//echo realpath('./');
+	  		$numItems = count($row3);
+	  		$i = 0;
+	  		$data = "var gdpData = {\n";
+	  		foreach ($row3 as $key => $value) {
+	  			switch ($key) {
+				    case "Afrique du Sud":
+				        $key = "ZA";
+				        break;
+				    case "Allemagne":
+				        $key = "DE";
+				        break;
+				    case "Argentine":
+				        $key = "AR";
+				        break;
+				    case "Australie":
+				        $key = "AU";
+				        break;
+				    case "Autriche":
+				        $key = "AT";
+				        break;
+				    case "Belgique":
+				        $key = "BE";
+				        break;
+				    case "Canada":
+				        $key = "CA";
+				        break;
+				    case "Chine":
+				        $key = "CN";
+				        break;
+				    case "Colombie":
+				        $key = "CO";
+				        break;
+				    case "Corée du Sud":
+				        $key = "KR";
+				        break;
+				    case "Espagne":
+				        $key = "ES";
+				        break;
+				    case "Etats Unis":
+				        $key = "US";
+				        break;
+				    case "France":
+				        $key = "FR";
+				        break;
+				    case "Ghana":
+				        $key = "GH";
+				        break;
+				    case "Hongrie":
+				        $key = "HU";
+				        break;
+				    case "Inde":
+				        $key = "IN";
+				        break;
+				    case "Italie":
+				        $key = "IT";
+				        break;
+				    case "Japon":
+				        $key = "JP";
+				        break;
+				    case "Maroc":
+				        $key = "MA";
+				        break;
+				    case "Royaume Uni":
+				        $key = "GB";
+				        break;
+				    case "Russie":
+				        $key = "RU";
+				        break;
+				    case "Suisse":
+				        $key = "CH";
+				        break;
+				    case "Yemen":
+				        $key = "YE";
+				        break;
+				}
+	  			$data.= "\t'".$key."' : ".$value;
+	  			if(++$i === $numItems) {
+    				$data.= "\n";
+				}else{
+					$data.= ",\n";
+				}
+	  		}
+	  		$data.= "};";
+	  		
+	  		file_put_contents ("./js/data.js", $data );
 
 		  	$conn = null; // Déconnexion
 

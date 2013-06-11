@@ -11,7 +11,7 @@ $(function(){
 		    }]
 		},
 		onRegionLabelShow: function(e, el, code){
-    		el.html(el.html()+' (GDP - '+gdpData[code]+')');
+    		el.html(el.html()+' | '+gdpData[code]+' victimes)');
   		}
 	});
 });
