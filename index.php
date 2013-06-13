@@ -24,6 +24,10 @@
   </header>
   <!-- /HEADER -->
 
+      <!-- INFOS AREA -->
+      <div id="info-area"></div>
+      <!-- /INFOS AREA -->
+
       <!-- STATS GLOBALES -->
       <section>
           <div></div>
@@ -42,11 +46,11 @@
       <div class="radioBtns">
           <span class="radioKill">
             <input id="kill" type="radio" name="radio" checked="checked" value="yes" />
-            <label for="kill">Tueurs</label>
+            <label for="serialkillers">Tueurs</label>
           </span>
           <span class="radioVictims">
             <input id="victims" type="radio" name="radio" value="no" />
-            <label for="victims">Victimes</label>
+            <label for="victimes">Victimes</label>
           </span>
       </div>
       <!-- /SWITCH -->
@@ -65,7 +69,7 @@
   <script src="js/assets/jquery-1.8.2.js"></script>
   <script src="js/jquery-jvectormap-1.1.1.min.js"></script>
   <script src="js/assets/jquery-jvectormap-world-mill-en.js"></script>
-  <script src="js/data.js"></script>
+  <script src="js/gdp-data.js"></script>
   <script src="js/main.js"></script>
   <!-- /SCRIPTS JS -->
 

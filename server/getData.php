@@ -107,8 +107,6 @@
 			//Récupération du pays et du mode
 			$pays = $_POST['pays'];
 
-			$pays ='Australie';
-
 			//Requète SQL
 			// Top 5
 
@@ -122,22 +120,19 @@
 		  	if($result !== false) {
 
 		  		// DATA type
-		  		$row  = $sql ->fetch(PDO::FETCH_BOTH);
+		  		$row  = $sql ->fetchAll(PDO::FETCH_ASSOC);
 
 		  		//Traitement
 				$top5  = $row;
 
-				// for ($i=0; $i < count($top5); $i++) { 
-				// 	$top5[$i]
-				// }
-
-				var_dump($top5['nom'][0]);
+				//var_dump($top5['nom'][0]);
 
 				//JSONage
 	    		$data = array(
 	    					'Pays'    => $pays,
-	    					'Top5'     => $top5,
+	    					'Top5'    => $top5
 	    				);
+	    		//var_dump($data);
 	    		
 				$data = json_encode($data);
 
