@@ -31,8 +31,8 @@
       <!-- STATS GLOBALES -->
       <section>
           <div></div>
-          <span id="totalSerial">TOTAL SERIAL KILLERS : <?php echo $row2[0]; ?></span>
-          <span id="totalVictims">VICTIMES TOTAL : <?php echo $row[0]; ?></span>
+          <span id="totalSerial">TOTAL SERIAL KILLERS : <strong><?php echo $row2[0]; ?></strong></span>
+          <span id="totalVictims">VICTIMES TOTAL : <strong><?php echo $row[0]; ?></strong></span>
       </section>
       <!-- STATS GLOBALES -->
       
