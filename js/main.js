@@ -38,7 +38,7 @@ $(function(){
 								tueurlist += "<li>";
 								$.each(killdata, function(key,val){
 									if(val!=""){
-										tueurlist += key+" : "+val+"<br>";
+										tueurlist += "<a href='#'>"+key+" : "+val+"<a/><br>";
 									}
 								});
 								tueurlist += "</li>";
