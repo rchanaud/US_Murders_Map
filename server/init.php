@@ -61,6 +61,9 @@
 					    case "Belgique":
 					        $key = "BE";
 					        break;
+					    case "Bresil":
+					        $key = "BR";
+					        break;
 					    case "Canada":
 					        $key = "CA";
 					        break;
@@ -76,7 +79,7 @@
 					    case "Espagne":
 					        $key = "ES";
 					        break;
-					    case "Etats Unis":
+					    case "Etats-Unis":
 					        $key = "US";
 					        break;
 					    case "France":
@@ -90,6 +93,9 @@
 					        break;
 					    case "Inde":
 					        $key = "IN";
+					        break;
+					    case "Indonesie":
+					        $key = "ID";
 					        break;
 					    case "Italie":
 					        $key = "IT";
