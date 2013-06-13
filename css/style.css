@@ -1,8 +1,12 @@
-html, body { margin: 0; padding: 0; background: #000; background: url(img/bg.jpg); background-size: cover; }
+html, body { margin: 0; padding: 0; background: #000; background: url(img/bg.jpg); background-size: cover;  }
 
 @font-face {
 	font-family: spetetrial;
 	src: url('fonts/SPETETRIAL.otf');
+}
+@font-face {
+	font-family: lucon;
+	src: url('fonts/lucon.otf');
 }
 
 header { position: absolute; width: 250px; height: 220px; }
@@ -76,8 +80,11 @@ section > div { background:url(img/bgstats.png) no-repeat; width: 300px; height:
   /*********************/
  /* Zone infos clique */
 /*********************/
-#info-area { width: 0px; position: absolute; top:10em; right: 20em; padding: 3em; background: url(img/stats.png); border: 1px solid #333; z-index: 1000; display: none; }
-
+#info-area { font-family: spetetrial, Verdana; color:#ab1414; width: 500px; height: 500px; position: absolute; top:7em; right: -300px; background: url(img/stats.png) no-repeat; z-index: 1000; display: none; overflow: hidden; }
+#info-area > h2 { position: relative; top: 90px; padding-left: 55px;}
+#info-area > ol { position: relative; top: 90px; padding-left: 80px; font-family: lucon, verdana;}
+#info-area > ol > li { margin-bottom: 10px; width: 250px;}
+#info-area > ol > li > a { color:#ab1414; text-decoration: none; }
 
 /****************/
 /* PIED DE PAGE */
