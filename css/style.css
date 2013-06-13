@@ -76,7 +76,7 @@ section > div { background:url(img/bgstats.png) no-repeat; width: 300px; height:
   /*********************/
  /* Zone infos clique */
 /*********************/
-#info-area { width: 0px; position: absolute; top:10em; right: 20em; padding: 3em; background-color: white; border: 1px solid #333; z-index: 1000; display: none; }
+#info-area { width: 0px; position: absolute; top:10em; right: 20em; padding: 3em; background: url(img/stats.png); border: 1px solid #333; z-index: 1000; display: none; }
 
 
 /****************/
