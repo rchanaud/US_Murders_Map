@@ -32,16 +32,11 @@
       </section>
       <!-- STATS GLOBALES -->
       
-      <!-- RESEAUX SOCIAUX -->
-        <div id="facebook">
-          <a title="Partager sur Facebook" href="http://www.facebook.com/share.php?u=Serial-Killers-Visualizer/542085159182499?ref=hl" onclick="return fbs_click()" target="_blank">
-          <img src="css/img/fb_default.png" alt="Partager sur Facebook" /></a>
-        </div>
-        <div id="twitter">
-          <a title="Partager sur Facebook" href="http://www.facebook.com/share.php?u=Serial-Killers-Visualizer/542085159182499?ref=hl" onclick="return fbs_click()" target="_blank">
-          <img src="css/img/twitter_default.png" alt="Partager sur Facebook" /></a>
-        </div>
-      <!-- /RESEAUX SOCIAUX -->
+      <!-- ELEMENT -->
+      <div id="ecouteurs"></div>
+      <div id="planche"></div>
+      <div id="cafegrandmere"></div>
+      <!-- /ELEMENT -->
 
       <!-- SWITCH -->
       <div class="radioBtns">
